@@ -41,7 +41,7 @@ Here is a glimpse of how the application looks in action:
        width="800"
        style="margin-bottom: 20px; border-radius: 10px;" />
 
-  <img src="screenshots/age-page.png"
+  <img src="sessionProfileApp/screenshots/age-page.png"
        alt="Age Page"
        width="800"
        style="margin-bottom: 20px; border-radius: 10px;" />
