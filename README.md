@@ -31,6 +31,19 @@ This project demonstrates how to pass and persist user data across multiple HTTP
 
 ---
 
+## 📸 Screenshots
+
+Here is a glimpse of how the application looks in action:
+
+<p align="center">
+  <img src="screenshots/name-page.png" alt="Django Name Page" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/>
+  <img src="screenshots/age-page.png" alt="Django Age Page" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/>
+  <img src="screenshots/course-page.png" alt="Django Course Page" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/>
+  <img src="screenshots/city-page.png" alt="Django City Page" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/>
+  <img src="screenshots/result-page.png" alt="Django Result Page" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"/>
+</p>
+
+
 ## 🔄 Form Pipeline Flow
 
 The application collects information step-by-step and summarizes it at the end:
