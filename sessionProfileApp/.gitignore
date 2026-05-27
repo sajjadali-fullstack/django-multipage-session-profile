@@ -1,0 +1,4 @@
+__pycache__/
+*.sqlite3
+# Ignore personal notes
+note.txt

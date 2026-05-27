@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result | Page</title>
+    <!-- Internal CSS -->
+    <style>
+        .asteriskField {
+            display: none !important;
+        }
+    </style>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light d-flex align-items-center justify-content-center min-vh-screen py-5">
+
+    <div class="container" style="max-width: 550px;">
+        <div class="card shadow border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+
+                {% if request.session %}
+                <h3 class="card-title text-center fw-bold text-dark mb-1">
+                    {{ name | upper}}, Thank you!
+                </h3>
+                <p class="text-muted text-center small mb-4">Thank you for providing information... Please confirm it.
+                </p>
+
+                <ul class="list-group list-group-flush border rounded-3 mb-4">
+                    {% for key, value in request.session.items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <span class="text-muted fw-bold small">{{ key|upper }}</span>
+                        <span class="text-dark fw-semibold">{{ value|title }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <div class="d-grid">
+                    <a href="/" class="btn btn-primary btn-lg rounded-3 fs-6 fw-medium shadow-sm">Do you want to add
+                        more?</a>
+                </div>
+
+                {% else %}
+                <div class="text-center py-4">
+                    <div class="text-danger mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                            class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg>
+                    </div>
+                    <h4 class="fw-bold text-secondary">No Information Available</h4>
+                    <p class="text-muted small">No data found in the current session.</p>
+                    <a href="/" class="btn btn-outline-secondary btn-sm mt-2">Go Back</a>
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
