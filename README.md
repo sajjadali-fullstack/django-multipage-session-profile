@@ -36,7 +36,7 @@ This project demonstrates how to pass and persist user data across multiple HTTP
 Here is a glimpse of how the application looks in action:
 
 <p align="center">
-  <img src="screenshots/name-page.png"
+  <img src="sessionProfileApp/screenshots/name-page.png"
        alt="Name Page"
        width="800"
        style="margin-bottom: 20px; border-radius: 10px;" />
@@ -46,17 +46,17 @@ Here is a glimpse of how the application looks in action:
        width="800"
        style="margin-bottom: 20px; border-radius: 10px;" />
 
-  <img src="screenshots/course-page.png"
+  <img src="sessionProfileApp/screenshots/course-page.png"
        alt="Course Page"
        width="800"
        style="margin-bottom: 20px; border-radius: 10px;" />
 
-  <img src="screenshots/city-page.png"
+  <img src="sessionProfileApp/screenshots/city-page.png"
        alt="City Page"
        width="800"
        style="margin-bottom: 20px; border-radius: 10px;" />
 
-  <img src="screenshots/result-page.png"
+  <img src="sessionProfileApp/screenshots/result-page.png"
        alt="Result Page"
        width="800"
        style="border-radius: 10px;" />
